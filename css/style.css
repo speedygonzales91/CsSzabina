@@ -1,0 +1,165 @@
+body {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+/*GLOBAL*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+ }
+
+ /*HEADER*/
+ header {
+    background-color: rgb(62, 136, 165);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3c3c3c 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+header a:hover{
+   color: rgb(227, 236, 239);
+   transform: scale(1.5);
+}
+
+ /*SHOWCASE*/
+ #showcase {
+    min-height: 700px;
+    background-image: url("../images/showcase.jpg");
+    background-repeat: no-repeat;
+    /*background-position: 0 -400px; /*Push up a little bit*/
+    background-size: cover;
+    text-align: center;
+    color: #3c3c3c;
+  }
+  
+  #showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+  
+  #showcase p {
+    font-size: 20px;
+  }
+
+  /*BOXES*/
+
+#boxes {
+    margin-top: 20px;
+  }
+  
+  #boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  #boxes .box img {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  /*ABOUT*/
+  #main-col .profile{
+      text-align: center;
+  }
+
+  .profile img {
+    width: 500px;
+    border-radius: 90%;
+  }
+
+
+  /*FOOTER*/
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(62, 136, 165);
+    color: #fff;
+    text-align: center;
+  }
+
+  /*MEDIA QUERIES*/
+@media(max-width:768px) {
+
+    header #branding,
+    header nav,
+    header nav ul li,
+    #boxes .box,
+    article#main-col,
+    .profile img {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+  
+    header {
+      padding-bottom: 20px;
+    }
+
+    header ul li {
+        margin: auto;
+    }
+  
+    #showcase h1 {
+      margin-top: 20px;
+    }
+
+    #showcase {
+        background-size: cover;
+    }
+}
+
+
+
+  /*
+  https://unsplash.com/photos/OTCUMdBYW2A
+  Knee image: Photo by Marlon Lara on Unsplash
+
+  https://unsplash.com/photos/CEM52sAHR80
+  Neck image: Photo by Jesper Aggergaard on Unsplash
+  */
